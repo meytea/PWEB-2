@@ -16,7 +16,7 @@
     }
 
     //Instansiasi  Objek dari class mahasiswa
-    $mahasiswa = new Mahasiswa ("Meilita Ayu Nur Khasanah", "230102038", "Komputer dan Bisnis");
+    $mahasiswa = new Mahasiswa ();
     $mahasiswa->nama ="Meilita Ayu Nur Khasanah";
     $mahasiswa->nim ="230102038";
     $mahasiswa->jurusan ="Komputer dan Bisnis";
