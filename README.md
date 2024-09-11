@@ -7,21 +7,21 @@
 
 <h3>Daftar Isi</h3>
 <ol>
-<li><a href="P.Web_2/Pertemuan1&2">Pertemuan 1 & 2</a></li>
+<li><a href="PWEB-2/Pertemuan1&2">Pertemuan 1 & 2</a></li>
   <ul>
-    <li><a href="P.Web_2/Pertemuan1&2/Jobsheet1">JobSheet 1</a></li>
-  <li><a href="P.Web_2/Pertemuan1&2/materi1">Materi 1</a></li>
+    <li><a href="PWEB-2/Pertemuan1&2/Jobsheet1">JobSheet 1</a></li>
+  <li><a href="PWEB-2/Pertemuan1&2/materi1">Materi 1</a></li>
   </ul>
   
-<li><a href="P.Web_2/Pertemuan3&4">Pertemuan 3 & 4</a></li>
+<li><a href="PWEB-2/Pertemuan3&4">Pertemuan 3 & 4</a></li>
 <ul>
-  <li><a href="P.Web_2/Pertemuan3&4/Jobsheet2">JobSheet 2</li>
-  <li><a href="P.Web_2/Pertemuan3&4/materi2">Materi 2</li>
+  <li><a href="PWEB-2/Pertemuan3&4/Jobsheet2">JobSheet 2</li>
+  <li><a href="PWEB-2/Pertemuan3&4/materi2">Materi 2</li>
   </ul>
-<li><a href="P.Web_2/Pertemuan5&6">Pertemuan 5 & 6</a></li>
+<li><a href="PWEB-2/Pertemuan5&6">Pertemuan 5 & 6</a></li>
 <ul>
-    <li><a href="P.Web_2/Pertemuan5&6/Jobsheet3">JobSheet 3</a></li>
-  <li><a href="P.Web_2/Pertemuan5&6/materi3">Materi 3 </a></li>
+    <li><a href="PWEB-2/Pertemuan5&6/Jobsheet3">JobSheet 3</a></li>
+  <li><a href="PWEB-2/Pertemuan5&6/materi3">Materi 3 </a></li>
 </ul>
 
 
