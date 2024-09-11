@@ -7,13 +7,6 @@
         public $nim;
         public $jurusan;
 
-        //Constructor untuk menginisialisasi atribut
-        // public function __construct($nama, $nim, $jurusan) {
-        //     $this->nama = $nama;
-        //     $this->nim = $nim;
-        //     $this->jurusan = $jurusan;
-        // }
-
         //Metode  atau Function untuk menampilkan data
         public function tampilkanData() {
             return "Nama Mahasiswa : $this->nama <br>
