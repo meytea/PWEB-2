@@ -111,7 +111,7 @@ contoh menampilkan data menggunakan metode yg bernama tampilkanData
     }
 
     //Instansiasi  Objek dari class mahasiswa
-    $mahasiswa = new Mahasiswa ("Meilita Ayu Nur Khasanah", "230102038", "Komputer dan Bisnis");
+    $mahasiswa = new Mahasiswa ();
     $mahasiswa->nama ="Meilita Ayu Nur Khasanah";
     $mahasiswa->nim ="230102038";
     $mahasiswa->jurusan ="Komputer dan Bisnis";
@@ -166,7 +166,7 @@ Output : ![1](https://github.com/user-attachments/assets/2a719fb1-78c1-404b-acfc
     }
 
     //Instansiasi Objek dari class Mahasiswa menggunakan setter
-    $mahasiswa = new Mahasiswa(); //"Meilita Ayu Nur Khasanah", "230102038", "Komputer dan Bisnis"
+    $mahasiswa = new Mahasiswa(); 
     $mahasiswa->setNama("Meilita Ayu Nur Khasanah");
     $mahasiswa->setNim ("230102038");
     $mahasiswa->setJurusan ("Komputer dan Bisnis");
