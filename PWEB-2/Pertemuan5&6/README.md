@@ -193,7 +193,8 @@ class Student extends Person {
 - Kelas Student mewarisi dari Person dan meng-override metode getName() untuk menggunakan implementasi dari kelas dasar. Ini menunjukkan bagaimana enkapsulasi bekerja dalam konteks pewarisan.
 </ol>
 
-Output: 
+Output: ![3](https://github.com/user-attachments/assets/58894e1d-a596-4224-9fcf-ee9a73479559)
+
 
 <h3>4. Abstraction</h3>
 <h5>Abstraction adalah proses menyembunyikan detail implementasi internal dan
