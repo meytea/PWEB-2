@@ -150,7 +150,10 @@ public function tampilkanData() {
 <li>Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.</li>
 
 ```php
-
+ $mahasiswa = new Mahasiswa ();
+    $mahasiswa->nama ="Meilita Ayu Nur Khasanah";
+    $mahasiswa->nim ="230102038";
+    $mahasiswa->jurusan ="Komputer dan Bisnis";
 
 ```
 
@@ -231,6 +234,79 @@ public function tampilkanData() {
 ```
 Output: ![2](https://github.com/user-attachments/assets/0426e36a-adf3-4fa8-88ee-aa8b2b65c8db)
 
+<ol>
+<li>Ubah atribut dalam class Mahasiswa menjadi private.</li> 
+        
+ ```php
+         class Mahasiswa {
+
+        //Atribut atau Properties private (tidak bisa di akses langsung dari luar class)
+        private $nama;
+        private $nim;
+        private $jurusan;
+
+    }
+  ```
+        
+<li>Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.</li>
+       
+ ```php
+        public function getNama(){
+            return "Nama : $this->nama";
+        }
+
+        public function setNama($nama) {
+            $this->nama = $nama;
+        }
+
+        //Getter dan Setter untuk atribut nim
+        public function getNim(){
+            return "NIM : $this->nim";
+        }
+ 
+        public function setNim($nim) {
+            $this->nim = $nim;
+        }
+
+        //Getter dan Setter untuk atribut jurusan
+        public function getJurusan(){
+            return "Jurusan : $this->jurusan";
+        }
+
+        public function setJurusan($jurusan) {
+            $this->jurusan = $jurusan;
+        }
+  ```
+        
+<li>Demonstrasikan akses ke atribut menggunakan metode getter dan setter.</li>
+
+```php
+         //Mengakses metode getter
+    echo $mahasiswa->getNama();
+    echo "<br>";
+    echo $mahasiswa->getNim();
+    echo "<br>";
+    echo $mahasiswa->getJurusan();
+    echo "<br>";
+    echo "<br>";
+
+    //Mengakses dan mengubah data menggunakan setter
+    $mahasiswa->setNama ("Meilita Ayu Nur Khasanah");
+    $mahasiswa->setNim ("230102038");
+    $mahasiswa->setJurusan ("Teknik Informatika");
+    echo "<b>Data Setelah Di Ubah</b><br>";
+
+    //Mengakses metode getter
+    echo $mahasiswa->getNama();
+    echo "<br>";
+    echo $mahasiswa->getNim();
+    echo "<br>";
+    echo $mahasiswa->getJurusan();
+ ```
+        
+</ol>
+
+
 <h3>3. Inheritance</h3>
 
 ```php
@@ -272,6 +348,50 @@ $dosen->tampilDataDosen();
 
 Output : ![3](https://github.com/user-attachments/assets/f96a9c1f-5d58-4b27-86ec-c1aee3dd4976)
 
+<ol>
+<li>Buat class Pengguna dengan atribut nama dan metode getNama()</li>
+
+```php
+class Pengguna {
+    // Atribut public (dapat diakses di mana saja)
+    public $nama;
+
+    // Metode untuk mendapatkan nama pengguna (getter)
+    public function getNama() {
+        return $this->nama;
+    }
+}
+```
+        
+<li>Buat class Dosen yang mewarisi class Pengguna dan tambahkan atribut mataKuliah.</li>
+
+```php
+class Dosen extends Pengguna {
+    // Atribut public tambahan untuk class Dosen
+    public $mataKuliah;
+
+    // Metode untuk menampilkan data dosen 
+    public function tampilDataDosen() {
+        echo "Nama Dosen    : " . $this->getNama() . "<br>";
+        echo "Mata Kuliah   : " . $this->mataKuliah . "<br>";  // Mengakses atribut langsung
+    }
+}
+```
+
+<li>Instansiasi objek dari class Dosen dan tampilkan data dosen.</li>
+
+```php
+$dosen = new Dosen();
+
+// Mengakses atribut public langsung dari luar kelas
+$dosen->nama = "Agus Widodo";       // Akses langsung ke atribut public
+$dosen->mataKuliah = "Matematika";   // Akses langsung ke atribut public
+
+// Menampilkan data dosen
+$dosen->tampilDataDosen();
+```
+
+</ol>
 <h3>4. Polymorphism</h3>
 
 ```php
@@ -323,6 +443,61 @@ Output : ![3](https://github.com/user-attachments/assets/f96a9c1f-5d58-4b27-86ec
 ```
 
 Output : ![4](https://github.com/user-attachments/assets/269daa6e-9d70-4299-9506-c91019397b47)
+
+<ol>
+<li>Buat class Pengguna dengan metode aksesFitur()</li>
+        
+```php
+        class Pengguna {
+        // Atribut public (dapat diakses langsung dari luar kelas)
+        public $nama;
+
+        // Metode akses fitur (akan di-overridden di subclass)
+        public function aksesFitur(){
+            return "Akses Fitur ";
+        }
+    }
+```
+        
+<li> Implementasikan aksesFitur() dengan cara berbeda di class Dosen dan Mahasiswa.</li>
+
+```php
+ class Dosen extends Pengguna {
+        // Tidak ada atribut tambahan
+
+        // Override metode aksesFitur untuk Dosen
+        public function aksesFitur() {
+            echo "Nama Dosen: " . $this->nama . "<br>";
+            echo "Fitur Dosen: Mengelola perkuliahan, Mengupload materi, dan menilai <br>";
+        }
+    }
+
+    // Definisi class Mahasiswa yang mewarisi class Pengguna
+    class Mahasiswa extends Pengguna {
+        // Tidak ada atribut tambahan
+
+        // Override metode aksesFitur untuk Mahasiswa
+        public function aksesFitur() {
+            echo "Nama Mahasiswa: " . $this->nama . "<br>";
+            echo "Fitur Mahasiswa: Mengikuti kelas, mengerjakan tugas, dan melihat nilai<br>";
+        }
+    }
+```
+
+<li> Instansiasi objek dari class Dosen dan Mahasiswa, lalu panggil metode aksesFitur().</li>
+
+```php
+ $dosen = new Dosen();
+    $dosen->nama = "Agus Purnono";          // Mengatur nilai atribut public dari parent class
+    $dosen->aksesFitur();
+
+    echo "<hr><br>";
+
+    $mahasiswa = new Mahasiswa();
+    $mahasiswa->nama = "Meilita Ayu Nur K"; // Mengatur nilai atribut public dari parent class
+    $mahasiswa->aksesFitur();
+```
+</ol>
 
 <h3>5.Abstraction </h3>
 
@@ -396,3 +571,84 @@ Output : ![4](https://github.com/user-attachments/assets/269daa6e-9d70-4299-9506
 ?>
 ```
 Output : ![5](https://github.com/user-attachments/assets/495a889f-d4a2-456e-9189-f3f55a22a1f0)
+
+<ol>
+<li>Buat class abstrak Pengguna dengan metode abstrak aksesFitur().</li>
+        
+```php
+ abstract class Pengguna {
+        protected $nama;  // Atribut atau property
+
+
+        // Constructor untuk menginisialisasi nama
+        public function __construct($nama) {
+            $this->nama = $nama;
+        }
+
+        // Metode abstrak aksesFitur (harus diimplementasikan di child class)
+        abstract protected function aksesFitur();
+        
+    }
+
+```
+        
+<li> Implementasikan class Mahasiswa dan Dosen yang mengimplementasikan metode abstrak tersebut.</li>
+
+```php
+class Mahasiswa extends Pengguna {
+
+        private $jurusan;     //Atribut tambahan untuk class Mahasiswa
+
+        //function Constructor
+        public function __construct($nama, $jurusan) {
+            parent::__construct($nama); //Memanggil nama yang ada di parent class
+            $this->jurusan = $jurusan;
+        }
+        //Implementasi metode aksesFitur untuk Mahasiswa
+        public function aksesFitur() {
+            echo "Nama : " . $this->nama . "<br>";
+            echo "Jurusan : " . $this->jurusan . "<br>";
+            echo "Fitur Mahasiswa: Mengikuti kelas, mengerjakan tugas, dan melihat nilai<br>";
+        }
+    } 
+
+    // Definisi class Mahasiswa yang mengimplementasikan class Pengguna
+    class Dosen extends Pengguna {
+
+        private $mataKuliah; //Atribut tambahan untuk class Dosen
+
+        //function Constructor
+        public function __construct($nama, $mataKuliah) {
+            parent::__construct($nama);
+            $this->mataKuliah = $mataKuliah;
+        }
+
+         //Implementasi metode aksesFitur untuk Mahasiswa
+         public function aksesFitur() {
+            echo "Nama : " . $this->nama . "<br>";
+            echo "Mata Kuliah : " . $this->mataKuliah . "<br>";
+            echo "Fitur Dosen: Mengelola perkuliahan, Mengupload materi, dan menilai <br>";
+
+        }     
+    }
+```
+
+<li> Demonstrasikan dengan memanggil metode aksesFitur() dari objek yangdiinstansiasi.</li>
+
+```php
+ $mahasiswa = new Mahasiswa( "Meilita Ayu Nur Khasanah", "JKB");
+
+    // Memanggil metode aksesFitur untuk masing-masing objek
+    echo " Mahasiswa.<br>";
+    $mahasiswa->aksesFitur();
+
+    echo "<hr>";
+
+    $dosen = new Dosen("Agus Purnomo", "Pemrograman Web");
+    echo "Dosen.<br>";
+    $dosen->aksesFitur();
+?>
+```
+</ol>
+
+
