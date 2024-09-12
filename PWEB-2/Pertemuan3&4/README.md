@@ -70,6 +70,7 @@
 
 Output : ![1](https://github.com/user-attachments/assets/90e8b89d-8e33-4979-9bc1-23385cd0b45b)
 
+<br><hr>
 
 <h3>2. Implementasi Constructor</h3>
 
@@ -154,6 +155,7 @@ Output : ![1](https://github.com/user-attachments/assets/90e8b89d-8e33-4979-9bc1
 
 Output : ![2](https://github.com/user-attachments/assets/5aa73b23-2478-4a43-bf09-71de1ebadec6)
 
+<br><hr>
 
 
 <h3>3. Membuat Metode Tambahan</h3>
@@ -263,6 +265,7 @@ Output : ![2](https://github.com/user-attachments/assets/5aa73b23-2478-4a43-bf09
 Output : ![3](https://github.com/user-attachments/assets/32a1fa26-213f-405f-aedd-851d47f26740)
 
 
+<br><hr>
 
 <h3>4. Penggunaan Atribut dan Metode</h3>
 
@@ -387,6 +390,7 @@ Output : ![3](https://github.com/user-attachments/assets/32a1fa26-213f-405f-aedd
 
 Output : ![4](https://github.com/user-attachments/assets/b55e3c5b-5f51-43ee-ab74-ede7290a165c)
 
+<br><hr>
 
 
 <h3>Tugas</h3>
