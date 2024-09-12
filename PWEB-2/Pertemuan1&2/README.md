@@ -121,7 +121,42 @@ contoh menampilkan data menggunakan metode yg bernama tampilkanData
     echo $mahasiswa->tampilkanData();
 ?>
 ```
+
 Output : ![1](https://github.com/user-attachments/assets/2a719fb1-78c1-404b-acfc-f820cf37639c)
+
+<ol>
+<li>Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.</li>
+        
+```php
+ Class Mahasiswa {
+
+        //Atribut atau Properties
+        public $nama;
+        public $nim;
+        public $jurusan;
+    }
+```
+
+<li>Buat metode tampilkanData() dalam class Mahasiswa.</li>
+
+```php
+public function tampilkanData() {
+            return "Nama Mahasiswa : $this->nama <br>
+            NIM : $this->nim <br>
+            Jurusan : $this->jurusan";
+        }
+```
+
+<li>Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.</li>
+
+```php
+
+
+```
+
+</ol>
+
+
 
 <h3>2. Encapsulation</h3>
 
