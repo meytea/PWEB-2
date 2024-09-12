@@ -90,6 +90,9 @@ public function getNama(){
 
 contoh menampilkan data menggunakan metode yg bernama tampilkanData
 
+
+<h4>Tugas JobSheet 1</h4>
+
 <h3>1. Membuat Class dan Object</h3>
 
 ```php
