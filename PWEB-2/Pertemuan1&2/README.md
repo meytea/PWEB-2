@@ -90,8 +90,9 @@ public function getNama(){
 
 contoh menampilkan data menggunakan metode yg bernama tampilkanData
 
+<br><hr>
 
-<h4>Tugas JobSheet 1</h4>
+<h2>Tugas JobSheet 1</h2>
 
 <h3>1. Membuat Class dan Object</h3>
 
@@ -163,7 +164,7 @@ public function tampilkanData() {
 </ol>
 
 
-
+<br><hr>
 <h3>2. Encapsulation</h3>
 
 ```php
@@ -309,6 +310,7 @@ Output: ![2](https://github.com/user-attachments/assets/0426e36a-adf3-4fa8-88ee-
         
 </ol>
 
+<br><hr>
 
 <h3>3. Inheritance</h3>
 
@@ -395,6 +397,9 @@ $dosen->tampilDataDosen();
 ```
 
 </ol>
+
+<br><hr>
+
 <h3>4. Polymorphism</h3>
 
 ```php
@@ -501,6 +506,8 @@ Output : ![4](https://github.com/user-attachments/assets/269daa6e-9d70-4299-9506
     $mahasiswa->aksesFitur();
 ```
 </ol>
+
+<br><hr>
 
 <h3>5.Abstraction </h3>
 
