@@ -9,7 +9,8 @@ metode dari kelas lain. Ini memungkinkan penggunaan kembali kode dan
 menciptakan hubungan hierarkis antara kelas.
 </h5>
 <ol>
-<li>mendefinisikan kelas dasar yang akan menjadi kelas induk. .</li>
+    
+<li>Membuat kelas dasar yang akan menjadi kelas induk. .</li>
 
 ```php
 <?php
@@ -45,7 +46,15 @@ class Person {
     }
 ```
 
-- Instansiasi: new Student("Meilita Ayu Nur Khasanah", 230102038) membuat objek Student dengan nama dan ID siswa.
+<li>Menginstansiasi kelas Student</li>
+
+```php
+ $student = new Student ("Meilita Ayu Nur Khasanah", 230102038);
+
+    echo "Name : " . $student->getName();
+    echo "<br>";
+    echo "Student ID : " . $student->getStudentID();
+```
 </ol>
 
 
@@ -61,7 +70,7 @@ Contoh coding:</h5>
 <ol>
     <li>Medefinisikan Kelas Dasar Person</li>
     
-    ```php
+```php
      class Person {
         public $name;
 
@@ -73,11 +82,9 @@ Contoh coding:</h5>
         }
     }
 
-    ```
+```
     
-<li>Memuat kelas Teacher yang juga mewarisi dari Person dan tambahkan atribut teacherID.</li>
-<li>Override metode getName() di kelas Student dan Teacher untuk menampilkan format berbeda</li>
-
+<li>Membuat kelas Teacher dan student yang juga mewarisi dari Person dan tambahkan atribut teacherID.</li>
 
 ```php
 class Student extends Person {
@@ -111,6 +118,23 @@ class Student extends Person {
         }
     }
 
+
+```
+
+<li>Menginstansiasi Class student dan teacher</li>
+
+```php
+$student = new Student ("Meilita Ayu Nur Khasanah", 230102038);
+    $teacher = new Teacher ("Agus Purnomo", 199213127128);
+
+    echo "Name : " . $student->getName();
+    echo "<br>";
+    echo "Student ID : " . $student->getStudentID();
+    echo "<br><hr>";
+    echo "Name : " . $teacher->getName();
+    echo "<br>";
+    echo "Teacher ID : " . $teacher->getTeacherID();
+
 ```
 </ol>
 
@@ -122,7 +146,7 @@ Output: ![2](https://github.com/user-attachments/assets/67a30d9e-183a-4724-91e9-
 <h5>Encapsulation menyembunyikan detail internal dari sebuah objek dan hanya membiarkan interaksi melalui metode publik yang tersedia, menjaga data internal tetap aman dari perubahan tak terduga.</h5>
 
 <ol>
-<li>Mendefinisikan kelas Person </li>
+<li>Membuat kelas Person </li>
 
 ```php
     class Person {
@@ -142,7 +166,7 @@ Output: ![2](https://github.com/user-attachments/assets/67a30d9e-183a-4724-91e9-
     }
 ```
     
-<li>Mendefinisikan kelas Student</li>
+<li>membuat kelas Student sebagai kelas turunan</li>
 
 ```php
 class Student extends Person {
@@ -169,7 +193,7 @@ class Student extends Person {
 
 ```
 
-<li>Instansiasi dan Penggunaan Kelas</li>
+<li>Menginstansi dan Penggunaan Kelas Student</li>
 
 ```php
  $student = new Student ("Meilita Ayu Nur Khasanah", 230102038);
@@ -266,10 +290,22 @@ class OfflineCourse extends Course {
 
 ```
 
+<li>Menginstansi Kelas turunan onlineCourse dan offlineCourse dan pengunaanya </li>
+
+```php
+$onlineCourse = new OnlineCourse("Junior Web Developer", "Wendi", "Zoom", 8);
+$offlineCourse = new OfflineCourse("Junior Network Administration", "Wawan Setiawan", "Auditorium PNC", "20/10/2024");
+
+echo $onlineCourse->getCourseDetails();
+echo "<br><hr>";
+echo $offlineCourse->getCourseDetails();
+```
+
 - Kelas Course adalah kelas abstrak yang mendefinisikan struktur dasar dan menetapkan kontrak bahwa setiap kelas turunan harus mengimplementasikan metode getCourseDetails(). Ini menyembunyikan detail implementasi dari pengguna kelas.
 - Metode getCourseDetails() adalah metode abstrak yang tidak memiliki implementasi di kelas Course tetapi harus diimplementasikan oleh setiap kelas turunan. Ini menyediakan fleksibilitas untuk kelas turunan dalam menentukan bagaimana detail kursus disajikan.
 - Implementasi Konkrit: Kelas OnlineCourse dan OfflineCourse memberikan implementasi spesifik untuk metode getCourseDetails(), masing-masing sesuai dengan jenis kursus mereka. Ini adalah penerapan konkret dari metode abstrak.
 </ol>
 
-
 Output : ![4](https://github.com/user-attachments/assets/94fea37e-191d-4498-b70e-91173e6a60f7)
+
+
