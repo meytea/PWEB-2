@@ -476,3 +476,4 @@ echo $jurnalMahasiswa->submit();
 - Abstraction (Abstraksi): Kelas Jurnal menyediakan kerangka kerja untuk kelas turunan dengan mendefinisikan metode submit() yang harus diimplementasikan oleh JurnalDosen dan JurnalMahasiswa.
 </ol>
 
+Output : ![tugas3](https://github.com/user-attachments/assets/3e43c8ca-bedd-47ea-bd74-8b99e675bc3a)
