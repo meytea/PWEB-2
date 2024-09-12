@@ -60,6 +60,8 @@ class Person {
 
 Output : ![1](https://github.com/user-attachments/assets/3e8e1c51-b3cc-412a-9485-086734fc5491)
 
+<br><hr>
+
 
 <h3>2. Polymorphism</h3>
 <h5>Polymorphism memungkinkan satu metode untuk memiliki banyak bentuk,
@@ -140,6 +142,7 @@ $student = new Student ("Meilita Ayu Nur Khasanah", 230102038);
 
 Output: ![2](https://github.com/user-attachments/assets/67a30d9e-183a-4724-91e9-ca09d65bc8c6)
 
+<br><hr>
 
 
 <h3>3. encapsulation</h3>
@@ -219,6 +222,7 @@ class Student extends Person {
 
 Output: ![3](https://github.com/user-attachments/assets/58894e1d-a596-4224-9fcf-ee9a73479559)
 
+<br><hr>
 
 <h3>4. Abstraction</h3>
 <h5>Abstraction adalah proses menyembunyikan detail implementasi internal dan
@@ -308,6 +312,7 @@ echo $offlineCourse->getCourseDetails();
 
 Output : ![4](https://github.com/user-attachments/assets/94fea37e-191d-4498-b70e-91173e6a60f7)
 
+<br><hr>
 
 <h3>TUGAS</h3>
 <ol>
